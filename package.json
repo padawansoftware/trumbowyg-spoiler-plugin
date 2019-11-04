@@ -1,6 +1,6 @@
 {
     "name": "@padawansoftware/trumbowyg-spoiler-plugin",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "description": "spoiler.js plugin for trumbowyg",
     "main": "trumbowyg.spoiler.js",
     "author": "Padawan Software",
@@ -13,7 +13,7 @@
     "homepage": "https://github.com/padawansoftware/trumbowyg-spoiler-plugin",
 
   "scripts": {
-    "publish": "npm publish --access public"
+    "push": "npm publish --access public"
   },
     "dependencies": {
         "@padawansoftware/spoiler.js": "<1.0"
