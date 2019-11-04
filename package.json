@@ -1,0 +1,21 @@
+{
+    "name": "@padawansoftware/trumbowyg-spoiler-plugin",
+    "version": "0.1.0",
+    "description": "spoiler.js plugin for trumbowyg",
+    "main": "trumbowyg.spoiler.js",
+    "author": "Padawan Software",
+    "license" : "MIT",
+
+    "keywords":  [
+        "trumbowyg",
+        "spoiler"
+    ],
+    "homepage": "https://github.com/padawansoftware/trumbowyg-spoiler-plugin",
+
+  "scripts": {
+    "publish": "npm publish --access public"
+  },
+    "dependencies": {
+        "@padawansoftware/spoiler.js": "<1.0"
+    }
+}
