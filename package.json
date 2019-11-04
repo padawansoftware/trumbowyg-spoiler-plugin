@@ -1,6 +1,6 @@
 {
     "name": "@padawansoftware/trumbowyg-spoiler-plugin",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "spoiler.js plugin for trumbowyg",
     "main": "trumbowyg.spoiler.js",
     "author": "Padawan Software",

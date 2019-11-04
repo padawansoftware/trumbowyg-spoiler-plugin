@@ -3,6 +3,10 @@ Spoiler = require('@padawansoftware/spoiler.js');
 (function ($, Spoiler) {
     'use strict';
 
+    // Plugin default options
+    var defaultOptions = {
+    };
+
     function buildButtonDef(trumbowyg) {
         return {
             fn: function () {
