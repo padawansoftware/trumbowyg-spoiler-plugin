@@ -1,0 +1,29 @@
+.spoiler {
+  background-color: darkslategray;
+  color: white;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+.spoiler-toggle {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.spoiler-state-expanded .spoiler-toggle {
+  padding-bottom: inherit
+}
+
+.spoiler-content {
+  background-color: white;
+  color: #333;
+}
+
+.spoiler-state-collapsed .spoiler-content {
+  display: none
+}
+

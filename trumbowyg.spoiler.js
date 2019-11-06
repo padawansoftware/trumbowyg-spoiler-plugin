@@ -1,5 +1,3 @@
-Spoiler = require('@padawansoftware/spoiler.js');
-
 (function ($, Spoiler) {
     'use strict';
 
@@ -11,13 +9,13 @@ Spoiler = require('@padawansoftware/spoiler.js');
         return {
             fn: function () {
                 var $modal = trumbowyg.openModal('Spoiler', [
-                    `<div class="${trumbowyg.o.prefix}highlight-form-group ">
+                    `<div class="${trumbowyg.o.prefix}spoiler-form-group ">
                         <label>Title</label>
-                        <input id="title" class="${trumbowyg.o.prefix}highlight-form-control title"></input>
+                        <input id="title" class="${trumbowyg.o.prefix}spoiler-form-control title"></input>
                     </div>
-                    <div class="${trumbowyg.o.prefix}highlight-form-group">
+                    <div class="${trumbowyg.o.prefix}spoiler-form-group">
                         <label>Content</label>
-                       <textarea class="${trumbowyg.o.prefix}highlight-form-control content"></textarea>
+                       <textarea class="${trumbowyg.o.prefix}spoiler-form-control content"></textarea>
                     </div>
                     `
                 ].join('\n')),
@@ -28,7 +26,7 @@ Spoiler = require('@padawansoftware/spoiler.js');
                 // Listen clicks on modal box buttons
                 $modal.on('tbwconfirm', function () {
                     trumbowyg.restoreRange();
-                    trumbowyg.execCmd('insertHTML', Spoiler.create({
+                    trumbowyg.execCmd('insertHTML', Spoiler.createHTML({
                         'spoilerText': $title.val(),
                         'spoilerContent': $content.val() ? $content.val() : (trumbowyg.getRangeText() ? trumbowyg.getRangeText() : '<br/>')
                         })
@@ -68,5 +66,11 @@ Spoiler = require('@padawansoftware/spoiler.js');
             }
         }
     });
-})(jQuery, Spoiler);
+})(jQuery, (function() {
+    if (typeof module !== 'undefined' && module.exports) {
+        return require('@padawansoftware/spoiler.js');
+    }
+
+    return Spoiler;
+})());
 

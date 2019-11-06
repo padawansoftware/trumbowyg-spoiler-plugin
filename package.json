@@ -1,21 +1,36 @@
 {
     "name": "@padawansoftware/trumbowyg-spoiler-plugin",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "spoiler.js plugin for trumbowyg",
     "main": "trumbowyg.spoiler.js",
     "author": "Padawan Software",
-    "license" : "MIT",
-
-    "keywords":  [
+    "license": "MIT",
+    "repository": "https://github.com/padawansoftware/trumbowyg-spoiler-plugin",
+    "files": [
+        "test",
+        "ui",
+        "trumbowyg.spoiler.js"
+    ],
+    "keywords": [
         "trumbowyg",
         "spoiler"
     ],
     "homepage": "https://github.com/padawansoftware/trumbowyg-spoiler-plugin",
-
-  "scripts": {
-    "push": "npm publish --access public"
-  },
+    "scripts": {
+        "clean": "rm -r ./node_modules",
+        "push": "npm publish --access public"
+    },
     "dependencies": {
         "@padawansoftware/spoiler.js": "<1.0"
+    },
+    "devDependencies": {
+        "css-loader": "^3.2.0",
+        "style-loader": "^1.0.0",
+        "trumbowyg": "^2.20.0",
+        "jquery": "^3.4.1"
+    },
+    "peerDependencies": {
+        "trumbowyg": "^2.20.0",
+        "jquery": "^3.4.1"
     }
 }
