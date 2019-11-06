@@ -1,0 +1,14 @@
+.trumbowyg-spoiler-form-group {
+  margin: 15px 10px;
+}
+
+.trumbowyg-spoiler-form-group .trumbowyg-spoiler-form-control {
+    width: 100%;
+    border: 1px solid #DEDEDE;
+    font-size: 14px;
+    padding: 7px;
+}
+
+.trumbowyg-spoiler-form-group .trumbowyg-spoiler-form-control.content {
+    height: 200px;
+}
